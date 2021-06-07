@@ -14,7 +14,7 @@ const editNumber = function (number) {
 };
 
 const showScore = function (theScore) {
-  document.querySelector('.number).textContent = theScore;
+  document.querySelector('.number').textContent = theScore;
 
 document.querySelector('.check').addEventListener('click', function () {
   const guess = Number(document.querySelector('.guess').value);
