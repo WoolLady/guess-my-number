@@ -13,10 +13,6 @@ const editNumber = function (number) {
   document.querySelector('.number').textContent = number;
 };
 
-const showScore = function (theScore) {
-  document.querySelector('.number').textContent = theScore;
-};
-
 document.querySelector('.check').addEventListener('click', function () {
   const guess = Number(document.querySelector('.guess').value);
   console.log(guess, typeof guess);
@@ -54,7 +50,7 @@ document.querySelector('.again').addEventListener('click', function () {
   secretNumber = Math.trunc(Math.random() * 20 + 1);
   //   location.reload(secretNumber);   This is another way to reload secret number instead of first line of above
   score = 20;
-  showScore(score);
+  document.querySelector('.score).textContent = score;
   displayMessage('Start guessing...');
   document.querySelector('body').style.backgroundColor = '#222';
   document.querySelector('.number').style.width = '15rem';
